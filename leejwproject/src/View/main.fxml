@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.PasswordField?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml/1" tabClosingPolicy="UNAVAILABLE"
+	prefWidth="1024" prefHeight="768"
+	fx:controller="Controller.MainController">
+	<!-- 영업용 텝 -->
+	<tabs>
+		<Tab text="영업용">
+			<content>
+				<AnchorPane>
+					<children>
+						<Label text="-좌석표-" layoutX="296" layoutY="7"></Label>
+
+						<!-- 좌석 버튼 과 좌석 정보 -->
+						<Button fx:id="btSit1" layoutX="25" layoutY="25" prefWidth="120"
+							prefHeight="100" mnemonicParsing="false">
+						</Button>
+						<TextArea fx:id="txtSit1" layoutX="35" layoutY="70"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit2" layoutX="165" layoutY="25"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit2" layoutX="175" layoutY="70"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit3" layoutX="25" layoutY="150"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit3" layoutX="35" layoutY="195"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit4" layoutX="165" layoutY="150"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit4" layoutX="175" layoutY="195"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit5" layoutX="25" layoutY="275"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit5" layoutX="35" layoutY="320"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit6" layoutX="165" layoutY="275"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit6" layoutX="175" layoutY="320"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit7" layoutX="350" layoutY="25"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit7" layoutX="360" layoutY="70"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit8" layoutX="490" layoutY="25"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit8" layoutX="500" layoutY="70"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit9" layoutX="350" layoutY="150"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit9" layoutX="360" layoutY="195"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit10" layoutX="490" layoutY="150"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit10" layoutX="500" layoutY="195"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit11" layoutX="350" layoutY="275"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit11" layoutX="360" layoutY="320"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<Button fx:id="btSit12" layoutX="490" layoutY="275"
+							prefWidth="120" prefHeight="100"></Button>
+						<TextArea fx:id="txtSit12" layoutX="500" layoutY="320"
+							prefWidth="100" prefHeight="50"></TextArea>
+						<!-- 메뉴 정렬 버튼 -->
+						<Button fx:id="btMeat" layoutX="25" layoutY="425"
+							prefWidth="100" prefHeight="45" text="고기류"></Button>
+						<Button fx:id="btMeal" layoutX="165" layoutY="425"
+							prefWidth="100" prefHeight="45" text="식사류"></Button>
+						<Button fx:id="btDrink" layoutX="305" layoutY="425"
+							prefWidth="100" prefHeight="45" text="주류"></Button>
+						<!-- 메뉴 추가 수정 삭제버튼 -->
+						<Button fx:id="btAdd" layoutX="520" layoutY="510"
+							prefWidth="100" prefHeight="220" text="추가"></Button>
+						<Button fx:id="btSet" layoutX="630" layoutY="510"
+							prefWidth="100" prefHeight="220" text="수정"></Button>
+						<Button fx:id="btDelete" layoutX="740" layoutY="510"
+							prefWidth="100" prefHeight="220" text="삭제"></Button>
+						<!-- 메뉴 결제 초기화 닫기 버튼 -->
+						<Button fx:id="btPayment" layoutX="850" layoutY="510"
+							prefWidth="175" prefHeight="150" text="결제"></Button>
+						<Button fx:id="btReset" layoutX="850" layoutY="670"
+							prefWidth="85" prefHeight="60" text="초기화"></Button>
+						<Button fx:id="btClose" layoutX="940" layoutY="670"
+							prefWidth="85" prefHeight="60" text="닫기"></Button>
+						<!-- 주문내역 -->
+						<TableView fx:id="tvOrderList" layoutX="650" layoutY="25"
+							prefWidth="375" prefHeight="470"></TableView>
+						<!-- 메뉴목록 -->
+						<TableView fx:id="tvManu" layoutX="25" layoutY="480"
+							prefWidth="480" prefHeight="250"></TableView>
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+		<!-- 관리자 텝 -->
+		<Tab text="관리자">
+			<content>
+				<AnchorPane>
+					<children>
+						<Label text="아이디 :" layoutX="300" layoutY="500"></Label>
+						<Label text="비밀번호 :" layoutX="288" layoutY="530"></Label>
+						
+						<TextField fx:id="txtID" prefWidth="100" prefHeight="15" layoutX="350" layoutY="498"></TextField>
+						<PasswordField fx:id="txtPass" prefWidth="100" prefHeight="15" layoutX="350" layoutY="528"></PasswordField>
+						
+						<Button fx:id="btLogin" text="로그인" prefWidth="100" prefHeight="55" layoutX="455" layoutY="498"></Button>
+						
+					</children>
+				</AnchorPane>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>
+

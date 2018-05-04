@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefWidth="1024" prefHeight="768" 
+fx:controller="Controller.AdminController" >
+	<!-- TODO Add Nodes -->
+	<children>
+	
+	<TableView fx:id="tvManu" prefWidth="1000" prefHeight="550" layoutX="15" layoutY="15"></TableView>
+	<Button fx:id="btAdminAdd" text="추가" prefWidth="100" prefHeight="150" layoutX="570" layoutY="600"></Button>
+	<Button fx:id="btAdminSet" text="수정" prefWidth="100" prefHeight="150" layoutX="685" layoutY="600"></Button>
+	<Button fx:id="btAdminDelete" text="삭제" prefWidth="100" prefHeight="150" layoutX="800" layoutY="600"></Button>
+	<Button fx:id="btAdminClose" text="닫기" prefWidth="100" prefHeight="150" layoutX="915" layoutY="600"></Button>
+	
+	</children>
+	
+	
+	
+	
+	
+	
+	
+	
+</AnchorPane>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefWidth="200" prefHeight="300">
+	<children>
+		<Label text="명칭" layoutX="15" layoutY="45"></Label>
+		<TextField fx:id="txtSetName"  prefWidth="100" layoutX="45" layoutY="45"></TextField>
+		<Label text="가격" layoutX="15" layoutY="80"></Label>
+		<TextField fx:id="txtSetprice"  prefWidth="100" layoutX="45" layoutY="80"></TextField>
+		<Label text="목록" layoutX="15" layoutY="115"></Label>
+		<TextField fx:id="txtSetList" prefWidth="100" layoutX="45" layoutY="115"></TextField>
+		
+		<Button fx:id="btSetAdd" text="수정" prefWidth="50" prefHeight="40" layoutX="15" layoutY="250"></Button>
+		<Button fx:id="btSetClose" text="닫기" prefWidth="50" prefHeight="40" layoutX="145" layoutY="250"></Button>
+	</children>
+</AnchorPane>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label text="결제시스템" layoutX="20" layoutY="20"></Label>
+		<TableView fx:id="OrderPaymentList" layoutX="10" layoutY="50"></TableView>
+		<Button fx:id="Payment" text="결제" prefWidth="40" layoutX="100" layoutY="20"></Button>
+		<Label text="총액" layoutX="100" layoutY="480"></Label>
+		<TextField fx:id="PayTotal" prefWidth="100" layoutX="100" layoutY="500"></TextField>
+		
+	</children>
+</AnchorPane>
+
